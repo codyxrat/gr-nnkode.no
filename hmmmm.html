@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grønn Koding</title>
+    <style>
+        /* Generelle stiler */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('GreenCoding.webp'); /* Endre til din bildesti */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #4a4a4a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background: static;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Sentraliserer innholdet horisontalt */
+            background-color: rgba(56, 142, 60, 0.9); /* Grønn bakgrunn */
+            color: white;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-bottom: 3px solid #2c6e49;
+        }
+
+        header img {
+            max-width: 150px; /* Sett en konkret størrelse for å holde bildet profesjonelt */
+            margin-right: 20px; /* Litt plass mellom bilde og tekst */
+            height: auto;
+        }
+
+        header div {
+            text-align: center; /* Sentraliserer teksten */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigasjonsmeny */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6e4b3a; /* Brun bakgrunn for nav */
+            padding: 12px 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-top: 3px solid #4a352c; /* Mørkere brun for kant */
+        }
+
+        nav a {
+            color: white;
+            padding: 16px 24px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #8e6f53; /* Lysere brun på hover */
+            border-radius: 5px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #8e6f53;
+        }
+
+        /* Dropdown stil */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #6e4b3a; /* Brun bakgrunn for dropdown */
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1rem;
+        }
+
+        /* Hovedinnhold */
+        .content {
+            max-width: 900px;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Lett hvit bakgrunn for innhold */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Kort med informasjon */
+        .card {
+           /* background-color: #ffffff;*/
+           background-color: #d3c7c1;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #2c6e49;
+        }
+
+        .card p {
+            color: #4b8f77;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6e4b3a; /* Grønn bakgrunn */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px solid #6e4b3a;
+            height: 30px;
+
+            
+        }
+
+        /* Responsivitet */
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo"> <!-- Sett inn din PNG-fil her -->
+    <div>
+        <h1>Grønn Koding</h1>
+        <p>Hvordan utvikling kan være både effektivt og bærekraftig</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Hjem</a>
+    <a href="#">Om</a>
+    <a href="#">Tjenester</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<div class="content">
+    <section>
+        <h2>Hva er grønn koding?</h2>
+        <p>Grønn koding handler om å utvikle programvare på en måte som reduserer energi- og ressursforbruk. Dette kan innebære alt fra å skrive effektiv kode som bruker mindre ressurser, til å velge mer bærekraftige teknologier og verktøy.</p>
+    </section>
+
+    <section>
+        <h2>Fordeler med grønn koding</h2>
+        <div class="card">
+            <h3>Redusert energi forbruk</h3>
+            <p>Effektiv kode kan bidra til å redusere energiforbruket, noe som er bra for både miljøet og kostnadene.</p>
+        </div>
+        <div class="card">
+            <h3>Bedre ytelse</h3>
+            <p>Ved å optimalisere koden kan applikasjoner kjøre raskere og mer effektivt, og dermed forbedre brukeropplevelsen.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hvordan begynne med grønn koding?</h2>
+        <p>For å komme i gang med grønn koding, kan du fokusere på noen enkle prinsipper:</p>
+        <ul>
+            <li>Skrive ren og effektiv kode</li>
+            <li>Bruke ressurser på en ansvarlig måte</li>
+            <li>Velge miljøvennlige teknologier og plattformer</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Grønn Koding. Alle rettigheter reservert.</p>
+</footer>
+
+</body>
+</html>
