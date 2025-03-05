@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grønn Koding</title>
+    <style>
+        /* Generelle stiler */
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('GreenCoding.webp'); /* Endre til din bildesti */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #4a4a4a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(56, 142, 60, 0.9);
+            color: white;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-bottom: 3px solid #2c6e49;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-right: 20px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigasjonsmeny */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6e4b3a;
+            padding: 12px 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            padding: 16px 24px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #8e6f53;
+            border-radius: 5px;
+        }
+
+        /* Hovedinnhold */
+        .content {
+            max-width: 900px;
+            width: 90%;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Kort med informasjon */
+        .card {
+            background-color: #d3c7c1;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6e4b3a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            border-top: 3px solid #6e4b3a;
+            margin-top: auto;
+        }
+
+        /* Responsivitet */
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo">
+    <div>
+        <h1>Grønn Koding</h1>
+        <p>Hvordan utvikling kan være både effektivt og bærekraftig</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Hjem</a>
+    <a href="#">Om</a>
+    <a href="#">Tjenester</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<div class="content">
+    <section>
+        <h2>Hva er grønn koding?</h2>
+        <p>Grønn koding handler om å utvikle programvare på en måte som reduserer energi- og ressursforbruk.</p>
+    </section>
+    
+    <section>
+        <h2>Fordeler med grønn koding</h2>
+        <div class="card">
+            <h3>Redusert energi forbruk</h3>
+            <p>Effektiv kode kan bidra til å redusere energiforbruket.</p>
+        </div>
+        <div class="card">
+            <h3>Bedre ytelse</h3>
+            <p>Optimalisering av kode forbedrer applikasjonens ytelse.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hvordan begynne med grønn koding?</h2>
+        <p>For å komme i gang, fokuser på disse prinsippene:</p>
+        <ul>
+            <li>Skrive ren og effektiv kode</li>
+            <li>Bruke ressurser ansvarlig</li>
+            <li>Velge miljøvennlige teknologier</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Grønn Koding. Alle rettigheter reservert.</p>
+</footer>
+
+</body>
+</html>
