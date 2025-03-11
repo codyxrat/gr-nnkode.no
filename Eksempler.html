@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksempler på grønn koding</title>
+    <link rel="stylesheet" href="index.css"> <!-- Koble til grønnkode.no sin stil -->
+    <script>
+        function toggleKode(element) {
+            var kodeblokk = element.nextElementSibling;
+            kodeblokk.style.display = kodeblokk.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Eksempler på grønn koding</h1>
+        <p>Enkle måter å kode mer bærekraftig.</p>
+    </header>
+
+    <main class="content">
+        <section class="card">
+            <h2>1. Energieffektiv kode</h2>
+<img src="energy.png.png" alt="Illustrasjon av energieffektiv kode" width="300">
+            <p>Lagret data lokalt for å unngå unødvendige forespørsler.</p>
+            <button class="vis-kode" onclick="toggleKode(this)">Vis kode</button>
+            <pre>
+    <code>
+&lt;script&gt;
+    if (!localStorage.getItem("melding")) {
+        localStorage.setItem("melding", "Dette er lagret lokalt!");
+    }
+    console.log(localStorage.getItem("melding"));
+&lt;/script&gt;
+    </code>
+</pre>
+        </section>
+
+        <section class="card">
+            <h2>2. Optimalisering av bilder</h2>
+<img src="image.png" alt="Illustrasjon av bildeoptimalisering" width="300">
+            <p>Bruk av WebP for å redusere filstørrelse.</p>
+            <button class="vis-kode" onclick="toggleKode(this)">Vis kode</button>
+            <pre>
+                <code>
+&lt;picture&gt;
+    &lt;source srcset="bilde.webp" type="image/webp"&gt;
+    &lt;img src="bilde.jpg" alt="Optimalisert bilde"&gt;
+&lt;/picture&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section class="card">
+            <h2>3. Lazy loading</h2>
+<img src="lazy.png" alt="Illustrasjon av lazy loading" width="300">
+            <p>Last inn bilder kun når de trengs.</p>
+            <button class="vis-kode" onclick="toggleKode(this)">Vis kode</button>
+            <pre>
+                <code>
+&lt;img src="bilde.jpg" loading="lazy" alt="Effektiv bildelasting"&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GrønnKode</p>
+    </footer>
+</body>
+</html>
